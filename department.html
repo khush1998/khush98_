@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Department Page</title>
+        <link rel="stylesheet" href="searchbar.css">
+    </head>
+    <body onload="init()">
+        <h2><center>Department Page</center></h2>
+        <hr>
+        <div>
+            <div>
+            <input class="searchbox" type="search" id="depSearch" name="employeeSearch" onkeyup="onSearch()" placeholder="Search by Name">
+            <a href="index.html" target="_parent" class="clear">Back to Main Page</a> 
+            <button class="add" onclick="openForm();">Add</button>
+            <div class="form-popup" id="depForm">
+                <form class="form-container" onsubmit="event.preventDefault();" autocomplete="off">
+                    <h2><center>Adding page</center></h2>
+
+                    <lable>Department Name</lable>
+                    <input type="text" name="depName" id="depName">
+
+                    <lable>Department Number</lable>
+                    <input type="text" name="depNumber" id="depNumber">
+
+                    <button type="submit" onclick="onsubmitPressed()" class="btn" id="submits">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Back</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <table class="list" id="depList">
+                <thead>
+                    <tr>
+                        <th>Department Name</th>
+                        <th>Department Number</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="depRows">
+
+                </tbody>    
+            </table>
+            <div >
+                <button class="clear" onclick="firstMove('1')">First</button>
+                <button class="clear" onclick="previous()">Prev</button>
+                <button class="clear" onclick="nextMove()">Next</button>
+                <button class="clear" onclick= "lastMove()">Last</button>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>

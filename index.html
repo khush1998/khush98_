@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <style>
+      body{
+        font-family: sans-serif;
+      }
+      #mainbox{
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .sidemenu{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 0px;
+        background-color: #222;
+        z-index: 1;
+        padding-top: 100px;
+        overflow: hidden;
+      }
+      .sidemenu a{
+        padding: 12px 12px 12px 64px;
+        text-decoration: none;
+        color: #999;
+        font-size: 30px;
+      }
+      .sidemenu a:hover{
+        color: white;
+      }
+      .sidemenu .closebtn{
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        font-size: 36px;
+        margin: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+    <div id="menu" class="sidemenu">
+      <a href="indexpage.html" target="_parent">Employee</a>
+      <a href="department.html">Department</a>
+      <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

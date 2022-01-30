@@ -1,0 +1,154 @@
+.add{
+    float:right;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.search{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.clear{
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+}
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 10;
+  }
+  
+  .form-container {
+    max-width: 800px;
+    height:100%;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container input[type=text]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: black;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+
+.searchbox{
+    width: 30%;
+    color: black;
+    padding: 9px 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: auto;
+    width: 100%;
+    float: center;
+}
+.list{
+    width:100%;
+    border-collapse: collapse;
+    margin: auto;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+#pagination {
+ display: block;
+ background-color: red;
+}
+
+.actions{
+  width:14%;
+  border-collapse: collapse;
+  margin: auto;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 6px;
+  float: right;
+  top: 0;
+  font-weight: bold;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-right: 4px;
+    background-color: black;
+    height: 80px;
+}
